@@ -17,13 +17,11 @@ public class Ejercicio04 {
 				
 		//Comando para introducir el primer número
 		num = sc.nextInt();
-		
-				
-		if (num>=10 || num<1)
-		System.out.print("La opción introducida es errónea");
-				
-		else {
-			switch(num) {
+		//dar valor a las variables creadas
+		uni=num%10;
+		dec=num/10;
+		//comando switch el cual tiene ciertos casos que si se cumplen, da una cosa o otra
+			switch(uni) {
 				
 			//
 			case 1:
@@ -53,6 +51,10 @@ public class Ejercicio04 {
 			case 9:
 				System.out.print("nueve");
 			break;
+			}
+			
+			switch(num) {
+			//
 			case 10:
 				System.out.print("diez");
 			break;
@@ -71,10 +73,18 @@ public class Ejercicio04 {
 			case 15:
 				System.out.print("quince");
 			break;
-
-					
+			case 20:
+				System.out.print("veinte");
+			break;
 			}
-		}
+			
+			switch(dec%10) {
+			case 1->
+			
+				System.out.print("dieci");
+			break;
+			
+			}
 		//cierre de scanner
 				sc.close();
 	}
